@@ -92,7 +92,7 @@ function fetchWeatherData(){
         console.log(timeOfDay)
         //clear
         if(code == 1000){
-            app.style.backgroundImage = `url(./Images/${timeOfDay}/clear.jpg)`
+            app.style.backgroundImage = `url(../Images/${timeOfDay}/clear.jpg)`
             btn.style.background = "#e5ba92";
 
             if(timeOfDay == "night"){
