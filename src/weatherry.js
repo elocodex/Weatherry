@@ -50,7 +50,7 @@ function dayOfTheWeek(day, month, year){
 }
 
 function fetchWeatherData(){
-    fetch(`http://api.weatherapi.com/v1/current.json?key=0ecab050f54a499abca101057242805&q=${cityInput}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=0ecab050f54a499abca101057242805&q=${cityInput}`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
@@ -75,7 +75,7 @@ function fetchWeatherData(){
 
         // console.log(iconId)
         // alert(icon.innerHTML)
-        icon.src ="./icons/"+ iconId;
+        icon.src ="../icons/"+ iconId;
 
         cloud.innerHTML = data.current.cloud + "%";
         humidity.innerHTML = data.current.humidity + "%"; 
