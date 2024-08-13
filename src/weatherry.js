@@ -75,7 +75,7 @@ function fetchWeatherData(){
 
         // console.log(iconId)
         // alert(icon.innerHTML)
-        icon.src ="../icons/"+ iconId;
+        icon.src ="/icons/"+ iconId;
 
         cloud.innerHTML = data.current.cloud + "%";
         humidity.innerHTML = data.current.humidity + "%"; 
@@ -92,7 +92,7 @@ function fetchWeatherData(){
         console.log(timeOfDay)
         //clear
         if(code == 1000){
-            app.style.backgroundImage = `url(../Images/${timeOfDay}/clear.jpg)`
+            app.style.backgroundImage = `url(/Images/${timeOfDay}/clear.jpg)`
             btn.style.background = "#e5ba92";
 
             if(timeOfDay == "night"){
@@ -111,7 +111,7 @@ function fetchWeatherData(){
             code == 1276 ||
             code == 1279 ||
             code == 1282){
-                app.style.backgroundImage = `url(../Images/${timeOfDay}/cloudy.jpg)`
+                app.style.backgroundImage = `url(/Images/${timeOfDay}/cloudy.jpg)`
                 btn.style.background = "#fa6d1b";
 
                 if(timeOfDay == "night"){
@@ -138,7 +138,7 @@ function fetchWeatherData(){
             code == 1246 ||
             code == 1249 ||
             code == 1252){
-                app.style.backgroundImage = `url(../Images/${timeOfDay}/rainy.jpg)`
+                app.style.backgroundImage = `url(/Images/${timeOfDay}/rainy.jpg)`
                 btn.style.background = "#647d75";
 
                 if(timeOfDay == "night"){
@@ -146,7 +146,7 @@ function fetchWeatherData(){
                 }
         //Snow Weather        
         }else{
-            app.style.backgroundImage = `url(../Images/${timeOfDay}/snowy.jpg)`
+            app.style.backgroundImage = `url(/Images/${timeOfDay}/snowy.jpg)`
             btn.style.background = "#4d72aa";
 
             if(timeOfDay == "night"){
