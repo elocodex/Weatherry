@@ -13,7 +13,7 @@ const search = document.querySelector('.search');
 const btn = document.querySelector('.submit');
 const cities = document.querySelectorAll('.city');
 
-jQuery.get("http://ipinfo.io", function (country) {
+jQuery.get("https://ipinfo.io", function (country) {
     // alert(country.city)
     let city = country.city
     
